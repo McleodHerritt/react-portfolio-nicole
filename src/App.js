@@ -19,7 +19,6 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/resume" element={<Resume />} />
-            {/* If you have a 404 page or other routes, define them here */}
           </Routes>
         </main>
         <Footer />
