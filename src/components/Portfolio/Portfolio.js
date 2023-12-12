@@ -1,16 +1,18 @@
 import React from "react";
-
+import clientPicture from "./assets/clientPicture.jpg";
+import weddingRsvpBackgroundImg from "./assets/weddingRsvpBackgroundImg.jpg";
+import "./portfolio.css";
 const portfolioItems = [
   {
     id: 1,
-    image: "./assets/clientpicture.jpg",
+    image: clientPicture,
     demoLink: "https://mcleodherritt.github.io/horiseon-client/",
     codeLink: "https://github.com/McleodHerritt/horiseon-client.git",
   },
 
   {
-    id: 1,
-    image: "./assets/weddingrsvpbackgroundimae.jpg",
+    id: 2,
+    image: weddingRsvpBackgroundImg,
     demoLink: "https://mcleodherritt.github.io/Wedding-RSVP/",
     codeLink: "https://github.com/McleodHerritt/Wedding-RSVP.git",
   },
