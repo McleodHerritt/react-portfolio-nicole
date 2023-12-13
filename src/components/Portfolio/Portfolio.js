@@ -7,6 +7,7 @@ const portfolioItems = [
     id: 1,
     image: clientPicture,
     demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+
     codeLink: "https://github.com/McleodHerritt/horiseon-client.git",
   },
 
@@ -14,6 +15,7 @@ const portfolioItems = [
     id: 2,
     image: weddingRsvpBackgroundImg,
     demoLink: "https://mcleodherritt.github.io/Wedding-RSVP/",
+
     codeLink: "https://github.com/McleodHerritt/Wedding-RSVP.git",
   },
 ];

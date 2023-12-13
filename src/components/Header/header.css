@@ -1,5 +1,5 @@
 .name {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   color: #ffffff;
 }
@@ -8,18 +8,34 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #302e2e;
+  background-color: black;
   padding: 20px, 10px, 20px, 10px;
   color: #ffffff;
-  gap: 10px;
-  margin: 0px, 0px, 10px, 10px;
+  margin: 0px 30px 0px 30px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.nav:hover {
+  color: purple;
 }
 
+.ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
 .nav a {
   text-decoration: none;
   color: #ffffff;
+  margin: 10px;
 }
-
-.nav a:hover {
-  color: purple;
+@media screen and (max-width: 768px) {
+  .nav {
+    justify-content: center;
+    margin: 0;
+  }
+  .nav a {
+    margin: 5px;
+  }
 }
