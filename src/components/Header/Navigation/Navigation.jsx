@@ -1,27 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  // because an assignment requirement is to use Link istead of NavLink, we have to use useLocation()
+  // to get the current location and then use that to determine which link should have the active class
+  const location = useLocation();
+
+  const getLinkClass = (path) => {
+    return location.pathname === path ? "nav active" : "nav";
+  };
+
   return (
     <nav>
       <ul>
         <li>
-          <Link className="nav" to="/">
+          <Link className={getLinkClass("/")} to="/">
             About Me
           </Link>
         </li>
         <li>
-          <Link className="nav" to="/portfolio">
+          <Link className={getLinkClass("/portfolio")} to="/portfolio">
             Portfolio
           </Link>
         </li>
         <li>
-          <Link className="nav" to="/contact">
+          <Link className={getLinkClass("/contact")} to="/contact">
             Contact
           </Link>
         </li>
         <li>
-          <Link className="nav" to="/resume">
+          <Link className={getLinkClass("/resume")} to="/resume">
             Resume
           </Link>
         </li>

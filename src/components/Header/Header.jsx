@@ -6,7 +6,7 @@ import Navigation from "./Navigation/Navigation";
 const Header = () => {
   return (
     <div>
-      <h1 className="name">Nicole McLeod-Herritt</h1>
+      <h1 className="name">Nicole Herritt</h1>
       <Navigation />
     </div>
   );
