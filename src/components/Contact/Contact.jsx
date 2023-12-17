@@ -73,6 +73,7 @@ const Contact = () => {
           Message:
         </label>
         <textarea
+          className="textarea"
           id="message"
           name="message"
           value={formData.message}
