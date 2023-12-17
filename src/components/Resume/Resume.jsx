@@ -9,7 +9,7 @@ const Resume = () => {
         <h2 className="h2">Education</h2>
         <ul className="list-items">
           <li>
-            Unervisity of New Brunswick - Full Stack Web Development Bootcamp
+            University of New Brunswick - Full Stack Web Development Bootcamp
           </li>
           <li>NSCC - Human Services Counselling</li>
         </ul>

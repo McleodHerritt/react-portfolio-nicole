@@ -15,36 +15,51 @@ const Contact = () => {
   // Handler for form input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    validateField(e.target.name);
   };
 
   // Form validation function
-  const validate = () => {
-    let tempErrors = {};
-    tempErrors.name = formData.name ? "" : "Name is required.";
-    tempErrors.email = formData.email
-      ? /\S+@\S+\.\S+/.test(formData.email)
-        ? ""
-        : "Email is not valid."
-      : "Email is required.";
-    tempErrors.message = formData.message ? "" : "Message is required.";
+  // Function to validate individual field
+  const validateField = (fieldName) => {
+    let tempErrors = { ...errors };
+    switch (fieldName) {
+      case "name":
+        tempErrors.name = formData.name ? "" : "Name is required.";
+        break;
+      case "email":
+        tempErrors.email = formData.email
+          ? /\S+@\S+\.\S+/.test(formData.email)
+            ? ""
+            : "Email is not valid."
+          : "Email is required.";
+        break;
+      case "message":
+        tempErrors.message = formData.message ? "" : "Message is required.";
+        break;
+      default:
+        break;
+    }
     setErrors(tempErrors);
-    return Object.values(tempErrors).every((x) => x === "");
   };
-
   // Handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
+    if (validateField()) {
       console.log("Form data submitted:", formData);
       // Process the form data here (e.g., send to an API)
       // Reset form or give user feedback
     }
   };
 
+  // Handler for field blur event
+  const handleBlur = (e) => {
+    validateField(e.target.name);
+  };
+
   return (
     <section className="contact">
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label className="label" htmlFor="name">
           Name:
         </label>
@@ -54,6 +69,7 @@ const Contact = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
         {errors.name && <p className="error">{errors.name}</p>}
 
@@ -66,6 +82,7 @@ const Contact = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
         {errors.email && <p className="error">{errors.email}</p>}
 
@@ -78,6 +95,7 @@ const Contact = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
+          onBlur={handleBlur}
         ></textarea>
         {errors.message && <p className="error">{errors.message}</p>}
 
