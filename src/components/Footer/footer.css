@@ -1,3 +1,7 @@
+.footer {
+  margin-top: auto;
+}
+
 .footer p {
   padding: 5px;
 }
@@ -14,13 +18,10 @@
 }
 
 .social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-decoration: none;
   color: #ffffff;
-  margin-top: 0px;
+  font-size: 3em;
+  margin-top: 1em;
+  padding: 1em;
 }
 
 .social-link:hover {
