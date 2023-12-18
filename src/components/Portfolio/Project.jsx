@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Project = ({ image, title, deployedLink, githubLink }) => {
   return (
-    <div className="portfolio-item ">
+    <div className="portfolio-item">
       <img src={image} className="portfolio-image" alt={title} />
       <div className="portfolio-links">
         <a className="portfolio-link" href={deployedLink}>

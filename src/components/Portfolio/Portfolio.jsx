@@ -1,6 +1,7 @@
 import React from "react";
 import clientPicture from "./assets/clientPicture.jpg";
 import weddingRsvpBackgroundImg from "./assets/weddingRsvpBackgroundImg.jpg";
+import onlineBookclub from "./assets/onlineBookclub.jpg";
 import "./portfolio.css";
 import Project from "./Project";
 
@@ -21,6 +22,38 @@ const portfolioItems = [
     demoLink: "https://mcleodherritt.github.io/Wedding-RSVP/",
 
     codeLink: "https://github.com/McleodHerritt/Wedding-RSVP.git",
+  },
+  {
+    id: 3,
+    image: onlineBookclub,
+    title: "Book Mark",
+    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+
+    codeLink: "",
+  },
+  {
+    id: 4,
+    image: onlineBookclub,
+    title: "Placeholder",
+    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+
+    codeLink: "",
+  },
+  {
+    id: 5,
+    image: onlineBookclub,
+    title: "Placeholder",
+    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+
+    codeLink: "",
+  },
+  {
+    id: 6,
+    image: onlineBookclub,
+    title: "Placeholder",
+    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+
+    codeLink: "",
   },
 ];
 const Portfolio = () => {
