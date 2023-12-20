@@ -67,7 +67,7 @@
 
 .portfolio-link:hover,
 .code-link:hover {
-  color: purple;
+  color: var(--tertirary-color);
 }
 
 @media screen and (max-width: 1400px) {
@@ -81,13 +81,4 @@
     flex-basis: 1;
     width: 80%;
   }
-
-  /* .portfolio-link {
-    font-size: 1em;
-    font-weight: bold;
-  }
-
-  .code-link {
-    font-size: 2em;
-  } */
 }

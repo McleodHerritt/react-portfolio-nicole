@@ -1,4 +1,36 @@
+:root {
+  --primary-color: #272727; /* Define the main color variable */
+  --secondary-color: #f2f3f4; /* Define the secondary color variable */
+  --tertirary-color: #6e7dab; /* Define the tertiary color variable */
+}
+
 body {
-  margin: 0;
-  background-color: black;
+  margin: 0; /* Removes the default margin from the <body> element */
+  background-color: var(
+    --primary-color
+  ); /* Sets the background color of the <body> to black */
+  color: var(--secondary-color); /* Sets the text color to white */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--secondary-color);
+}
+
+nav {
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--tertirary-color);
 }

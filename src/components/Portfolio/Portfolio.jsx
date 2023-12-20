@@ -1,11 +1,13 @@
-import React from "react";
-import clientPicture from "./assets/clientPicture.jpg";
-import weddingRsvpBackgroundImg from "./assets/weddingRsvpBackgroundImg.jpg";
-import onlineBookclub from "./assets/onlineBookclub.jpg";
-import "./portfolio.css";
-import Project from "./Project";
+import React from "react"; // Importing React from the 'react' package
+import clientPicture from "./assets/clientPicture.jpg"; // Importing an image asset for clientPicture
+import weddingRsvpBackgroundImg from "./assets/weddingRsvpBackgroundImg.jpg"; // Importing an image asset for weddingRsvpBackgroundImg
+import onlineBookclub from "./assets/onlineBookclub.jpg"; // Importing an image asset for onlineBookclub
+import "./portfolio.css"; // Importing the stylesheet for the Portfolio component
+import Project from "./Project"; // Importing the Project component
 
+// Array of portfolio items, each item is an object with id, image, title, demoLink, and codeLink
 const portfolioItems = [
+  // Example items in the array
   {
     id: 1,
     image: clientPicture,
@@ -56,6 +58,8 @@ const portfolioItems = [
     codeLink: "",
   },
 ];
+
+// Defining the Portfolio functional component
 const Portfolio = () => {
   return (
     <section className="portfolio">
@@ -74,4 +78,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Portfolio; // Exporting the Portfolio component

@@ -1,28 +1,47 @@
 .resume-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: aliceblue;
+  font-size: 2.5rem; /* Sets the font size of elements with class 'resume-title' */
+  font-weight: 700; /* Makes the font weight bold */
+  margin-bottom: 1rem; /* Adds a 1rem bottom margin */
+  color: var(
+    --secondary-color
+  ); /* Sets the text color to the secondary color */
 }
 .h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: aliceblue;
+  font-size: 1.5rem; /* Sets the font size of elements with class 'h2' */
+  font-weight: 700; /* Makes the font weight bold */
+  margin-bottom: 1rem; /* Adds a 1rem bottom margin */
+  color: var(
+    --secondary-color
+  ); /* Sets the text color to the secondary color */
+}
+
+a {
+  color: var(
+    --tertirary-color
+  ); /* Sets the text color to the tertirary color */
+  text-decoration: none; /* Removes the underline from links */
+  /* Adds a transition effect to the element */
+  transition: all 0.3s ease-in-out;
+}
+
+.resume:hover {
+  transform: scale(1.1); /* Adds a hover effect to links */
 }
 
 .list-items {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: aliceblue;
-  margin-bottom: 50px;
+  font-size: 1rem; /* Sets the font size of elements with class 'list-items' */
+  color: var(
+    --secondary-color
+  ); /* Sets the text color to the secondary color */
+  margin-bottom: 50px; /* Adds a 50px bottom margin */
+  font-style: italic;
 }
 
 .resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  display: flex; /* Sets the display to flex for '.resume' elements */
+  flex-direction: column; /* Arranges children elements in a column */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+  padding: 20px; /* Adds padding around the element */
+  font-size: 1.75em;
 }

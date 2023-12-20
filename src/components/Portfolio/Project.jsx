@@ -1,6 +1,7 @@
-import React from "react";
-import { FaGithub } from "react-icons/fa";
+import React from "react"; // Importing React from the 'react' package
+import { FaGithub } from "react-icons/fa"; // Importing the GitHub icon from 'react-icons'
 
+// Defining the Project functional component with destructured props
 const Project = ({ image, title, deployedLink, githubLink }) => {
   return (
     <div className="portfolio-item">
@@ -17,4 +18,4 @@ const Project = ({ image, title, deployedLink, githubLink }) => {
   );
 };
 
-export default Project;
+export default Project; // Exporting the Project component

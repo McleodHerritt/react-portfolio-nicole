@@ -11,6 +11,7 @@ This project is a personal portfolio website developed using React. It showcases
   - [Features](#features)
   - [Technology Stack](#technology-stack)
   - [Contribution](#contribution)
+  - [Deployment](#deployment)
   - [License](#license)
 
 ## Installation and Setup
@@ -54,6 +55,10 @@ Contributions to the project are welcome. Please follow these steps:
 3. Make your changes and commit them: `git commit -m 'Add some feature'`.
 4. Push to the branch: `git push origin feature-branch-name`.
 5. Submit a pull request.
+
+## Deployment
+
+The site has been deployed using Netlify to [here.](https://658316a57e948f3218d03331--lighthearted-hotteok-3de156.netlify.app)
 
 ## License
 
