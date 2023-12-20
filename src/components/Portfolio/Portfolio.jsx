@@ -2,6 +2,9 @@ import React from "react"; // Importing React from the 'react' package
 import clientPicture from "./assets/clientPicture.jpg"; // Importing an image asset for clientPicture
 import weddingRsvpBackgroundImg from "./assets/weddingRsvpBackgroundImg.jpg"; // Importing an image asset for weddingRsvpBackgroundImg
 import onlineBookclub from "./assets/onlineBookclub.jpg"; // Importing an image asset for onlineBookclub
+import preworkStudyGuide from "./assets/preworkStudyGuide.jpg"; // Importing an image asset for preworkStudyGuide
+import noteTaking from "./assets/noteTaking.jpg"; // Importing an image asset for noteTaking
+import dailyScheduler from "./assets/dailyScheduler.jpg"; // Importing an image asset for dailyScheduler
 import "./portfolio.css"; // Importing the stylesheet for the Portfolio component
 import Project from "./Project"; // Importing the Project component
 
@@ -29,33 +32,34 @@ const portfolioItems = [
     id: 3,
     image: onlineBookclub,
     title: "Book Mark",
-    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+    demoLink: "",
 
-    codeLink: "",
+    codeLink: "https://github.com/McleodHerritt/Bookclub",
   },
   {
     id: 4,
-    image: onlineBookclub,
-    title: "Placeholder",
-    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+    image: preworkStudyGuide,
+    title: "Prework Study Guide",
+    demoLink: "https://mcleodherritt.github.io/prework-study-guide/",
 
-    codeLink: "",
+    codeLink: "https://github.com/McleodHerritt/prework-study-guide",
   },
   {
     id: 5,
-    image: onlineBookclub,
-    title: "Placeholder",
-    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+    image: noteTaking,
+    title: "Note Taking App",
+    demoLink: "https://quiet-refuge-24933-885d5736a54d.herokuapp.com/notes",
 
-    codeLink: "",
+    codeLink:
+      "https://github.com/McleodHerritt/taking-notes-made-easy?tab=readme-ov-file",
   },
   {
     id: 6,
-    image: onlineBookclub,
-    title: "Placeholder",
-    demoLink: "https://mcleodherritt.github.io/horiseon-client/",
+    image: dailyScheduler,
+    title: "Daily Scheduler",
+    demoLink: "https://mcleodherritt.github.io/daily-scheduler/",
 
-    codeLink: "",
+    codeLink: "https://github.com/McleodHerritt/daily-scheduler",
   },
 ];
 
