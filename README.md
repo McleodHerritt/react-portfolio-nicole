@@ -12,6 +12,7 @@ This project is a personal portfolio website developed using React. It showcases
   - [Technology Stack](#technology-stack)
   - [Contribution](#contribution)
   - [Deployment](#deployment)
+  - [Screenshot](#screenshot)
   - [License](#license)
 
 ## Installation and Setup
@@ -58,7 +59,11 @@ Contributions to the project are welcome. Please follow these steps:
 
 ## Deployment
 
-The site has been deployed using Netlify to [here.](https://658316a57e948f3218d03331--lighthearted-hotteok-3de156.netlify.app)
+The site has been deployed using Netlify to [here.](https://lighthearted-hotteok-3de156.netlify.app/)
+
+## Screenshot
+
+![Full screenshot](./public/screenShot.png)
 
 ## License
 
