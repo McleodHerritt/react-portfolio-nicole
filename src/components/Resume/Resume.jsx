@@ -5,6 +5,9 @@ const Resume = () => {
   return (
     <div>
       <h1 className="resume-title">Resume</h1>
+      <a className="resume" href="/ResumeDec2023.pdf">
+        Click here to download my resume
+      </a>
       <div>
         <h2 className="h2">Education</h2>
         <ul className="list-items">

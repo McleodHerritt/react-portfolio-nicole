@@ -16,7 +16,7 @@
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .profile-description {
@@ -24,4 +24,5 @@
   text-align: center;
   margin-bottom: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 2em 5em;
 }

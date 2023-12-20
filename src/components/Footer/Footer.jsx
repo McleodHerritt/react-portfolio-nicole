@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,11 +15,19 @@ const Footer = () => {
         </a>
         <a
           className="social-link"
-          href="https://linkedin.com/in/yourusername"
+          href="https://linkedin.com/in/nicoleherritt"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin />
+        </a>
+        <a
+          className="social-link"
+          href="https://twitter.com/nicoleherritt"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTwitter />
         </a>
       </div>
       <div className="footer-text">
