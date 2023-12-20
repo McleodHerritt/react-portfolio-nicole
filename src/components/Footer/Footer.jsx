@@ -23,7 +23,7 @@ const Footer = () => {
         </a>
         <a
           className="social-link"
-          href="https://twitter.com/nicoleherritt"
+          href="https://twitter.com/nicoleherr20075"
           target="_blank"
           rel="noopener noreferrer"
         >
