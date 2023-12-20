@@ -32,7 +32,7 @@ const portfolioItems = [
     id: 3,
     image: onlineBookclub,
     title: "Book Mark",
-    demoLink: "",
+    demoLink: "none",
 
     codeLink: "https://github.com/McleodHerritt/Bookclub",
   },

@@ -68,6 +68,13 @@
 .portfolio-link:hover,
 .code-link:hover {
   color: var(--tertirary-color);
+  text-shadow: 0 0 5px var(--primary-color);
+}
+
+.portfolio-link.disabled:hover {
+  color: var(--secondary-color);
+  text-shadow: none;
+  cursor: default;
 }
 
 @media screen and (max-width: 1400px) {
