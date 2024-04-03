@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe/AboutMe"; // Importing the AboutMe com
 import Portfolio from "./components/Portfolio/Portfolio"; // Importing the Portfolio component
 import Contact from "./components/Contact/Contact"; // Importing the Contact component
 import Resume from "./components/Resume/Resume"; // Importing the Resume component
+import Services from "./components/Services/Services";
 import "./App.css"; // Importing the main stylesheet for the App
 
 // Defining the App component
@@ -16,14 +17,11 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<AboutMe />} />{" "}
-            {/* Route for the About Me */}
-            <Route path="/portfolio" element={<Portfolio />} />{" "}
-            {/* Route for the Portfolio page */}
-            <Route path="/contact" element={<Contact />} />{" "}
-            {/* Route for the Contact page */}
-            <Route path="/resume" element={<Resume />} />{" "}
-            {/* Route for the Resume page */}
+            <Route path="/" element={<AboutMe />} /> {/* Route for the About Me */}
+            <Route path="/portfolio" element={<Portfolio />} /> {/* Route for the Portfolio page */}
+            <Route path="/contact" element={<Contact />} /> {/* Route for the Contact page */}
+            <Route path="/resume" element={<Resume />} /> {/* Route for the Resume page */}
+            <Route path="/services" element={<Services />} />
           </Routes>
         </main>
         {/* Inserting the Footer component */}

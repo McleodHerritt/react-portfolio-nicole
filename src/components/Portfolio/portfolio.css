@@ -21,7 +21,7 @@
 }
 /* Style the portfolio items */
 .portfolio-item {
-  background-color: grey;
+  background-color: var(--tertirary-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -67,7 +67,7 @@
 
 .portfolio-link:hover,
 .code-link:hover {
-  color: var(--tertirary-color);
+  color: var(--secondary-color);
   text-shadow: 0 0 5px var(--primary-color);
 }
 

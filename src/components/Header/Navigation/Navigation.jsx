@@ -12,7 +12,7 @@ const Navigation = () => {
 
   return (
     <nav>
-      <ul>
+      <ul className="nav-list">
         <li>
           <Link className={getLinkClass("/")} to="/">
             About Me
@@ -31,6 +31,11 @@ const Navigation = () => {
         <li>
           <Link className={getLinkClass("/resume")} to="/resume">
             Resume
+          </Link>
+        </li>
+        <li>
+          <Link className={getLinkClass("/services")} to="/services">
+            Services
           </Link>
         </li>
       </ul>

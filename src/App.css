@@ -1,7 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
+
 #root,
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.primary-color-bg {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.accent-dark-bg {
+  background-color: var(--primary-accent-color);
+  color: var(--secondary-accent-color);
+}
+.accent-light-bg {
+  background-color: var(--secondary-accent-color);
+  color: var(--primary-color);
+}
+
+.flexbox-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

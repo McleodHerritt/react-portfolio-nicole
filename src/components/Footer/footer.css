@@ -1,5 +1,5 @@
 .footer {
-  margin-top: auto;
+  margin-top: 2em;
 }
 
 .footer p {
@@ -9,7 +9,7 @@
 .footer-text {
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--secondary-accent-color);
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -18,14 +18,14 @@
 }
 
 .social-link {
-  color: #ffffff;
+  color: var(--secondary-accent-color);
   font-size: 3em;
   margin-top: 1em;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .social-link:hover {
-  color: var(--tertirary-color);
+  color: var(--secondary-color);
 }
 @media screen and (max-width: 768px) {
   .footer-text {

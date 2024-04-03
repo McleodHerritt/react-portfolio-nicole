@@ -1,25 +1,44 @@
 .resume-title {
   font-size: 2.5rem; /* Sets the font size of elements with class 'resume-title' */
   font-weight: 700; /* Makes the font weight bold */
+
   margin-bottom: 1rem; /* Adds a 1rem bottom margin */
-  color: var(
-    --secondary-color
-  ); /* Sets the text color to the secondary color */
+  color: var(--secondary-accent-color); /* Sets the text color to the secondary color */
 }
-.h2 {
-  font-size: 1.5rem; /* Sets the font size of elements with class 'h2' */
-  font-weight: 700; /* Makes the font weight bold */
+.resume-title {
+  font-size: 3rem; /* Sets the font size of elements with class 'h2' */
+  font-weight: 300; /* Makes the font weight bold */
   margin-bottom: 1rem; /* Adds a 1rem bottom margin */
-  color: var(
-    --secondary-color
-  ); /* Sets the text color to the secondary color */
+  margin-top: 4rem; /* Adds a 1rem top margin */
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  color: var(--secondary-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.resume-title::before,
+.resume-title::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  width: 50px; /* Width of the line */
+  height: 3px; /* Thickness of the line */
+  background-color: var(--primary-accent-color); /* Line color */
+  transform: translateY(-100%);
+}
+.resume-title::before {
+  background-image: url(../SVG/curved-line.svg);
+  left: -60px;
+}
+.resume-title::after {
+  background-image: url(../SVG/curved-line.svg);
+  right: -60px;
 }
 
 a {
-  color: var(
-    --tertirary-color
-  ); /* Sets the text color to the tertirary color */
-  text-decoration: none; /* Removes the underline from links */
+  color: var(--secondary-accent-color); /* Sets the text color to the tertirary color */
+  text-decoration: wavy; /* Removes the underline from links */
   /* Adds a transition effect to the element */
   transition: all 0.3s ease-in-out;
 }
@@ -28,20 +47,107 @@ a {
   transform: scale(1.1); /* Adds a hover effect to links */
 }
 
+.section-title {
+  font-size: 2rem; /* Sets the font size of elements with class 'section-title' */
+  font-weight: 700; /* Makes the font weight bold */
+  margin-bottom: 1rem; /* Adds a 1rem bottom margin */
+  color: var(--primary-accent-color); /* Sets the text color to the secondary color */
+  text-decoration: underline;
+}
 .list-items {
   font-size: 1rem; /* Sets the font size of elements with class 'list-items' */
-  color: var(
-    --secondary-color
-  ); /* Sets the text color to the secondary color */
+  color: var(--primary-color); /* Sets the text color to the secondary color */
   margin-bottom: 50px; /* Adds a 50px bottom margin */
   font-style: italic;
+  font-weight: 700;
+  list-style: none;
 }
 
-.resume {
+.resume .flex .flexbox-space-between {
   display: flex; /* Sets the display to flex for '.resume' elements */
-  flex-direction: column; /* Arranges children elements in a column */
-  align-items: center; /* Centers children horizontally */
-  justify-content: center; /* Centers children vertically */
-  padding: 20px; /* Adds padding around the element */
+  flex-direction: center; /* Arranges children elements in a column */
+  align-items: center;
   font-size: 1.75em;
+}
+
+.resume-card.education {
+  background-color: var(--secondary-color); /* Sets the background color to the tertiary color */
+  padding: 5% 1%;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px var(--secondary-accent-color);
+  margin-top: 0px;
+}
+.resume-card.experience {
+  background-color: var(--secondary-color); /* Sets the background color to the tertiary color */
+  padding: 5% 1%;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px var(--secondary-accent-color);
+  margin-bottom: 0;
+}
+.resume-card.skills {
+  background-color: var(--secondary-color); /* Sets the background color to the tertiary color */
+  padding: 5% 1%;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px var(--secondary-accent-color);
+  flex: 1;
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-card {
+  margin: 20px;
+  background-color: var(--secondary-color); /* Sets the background color to the tertiary color */
+  padding: 5% 1%;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px var(--secondary-accent-color);
+}
+
+.resume-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.double-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.mern-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  width: 40vw;
+  height: 40vh;
+}
+.image {
+  max-height: 20vw;
+  margin-right: 5em;
+  margin-left: 3em;
+  margin-top: 20px;
+}
+.unb-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 200px;
+  width: 20vw;
+  height: 20vh;
+}
+@media screen and (max-width: 840px) {
+  .unb-pic {
+    display: none;
+  }
+  .image {
+    display: none;
+  }
+  .mern-pic {
+    display: none;
+  }
 }

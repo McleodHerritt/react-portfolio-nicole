@@ -1,14 +1,14 @@
 :root {
-  --primary-color: #272727; /* Define the main color variable */
-  --secondary-color: #f2f3f4; /* Define the secondary color variable */
-  --tertirary-color: #6e7dab; /* Define the tertiary color variable */
+  --primary-color: #1b4965ff; /* Define the main color variable */
+  --secondary-color: #e2c8d9; /* Define the secondary color variable */
+  --tertirary-color: #62b6cbff; /* Define the tertiary color variable */
+  --primary-accent-color: #5fa8d3ff; /* Define the accent color variable */
+  --secondary-accent-color: #cae9ffff; /* Define the secondary accent color variable */
 }
 
 body {
   margin: 0; /* Removes the default margin from the <body> element */
-  background-color: var(
-    --primary-color
-  ); /* Sets the background color of the <body> to black */
+  background-color: var(--primary-color); /* Sets the background color of the <body> to black */
   color: var(--secondary-color); /* Sets the text color to white */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -24,6 +24,7 @@ nav {
 
 h2 {
   font-size: 24px;
+  color: var(--primary-accent-color);
 }
 
 p {

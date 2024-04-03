@@ -1,0 +1,20 @@
+<img src="curved-line.svg" alt="Curved Line">
+
+<!-- Path: src/components/SVG/.svg -->
+<img src="curved-line.svg" alt="Curved Line">
+```
+
+### SVG with a title
+
+```html
+<!-- Path: src/components/SVG/.svg -->
+<svg>
+  <title>Curved Line</title>
+  <use xlink:href="#curved-line"></use>
+</svg>
+
+<!-- Path: src/components/SVG/.svg -->
+<svg>
+  <title>Curved Line</title>
+  <use xlink:href="#curved-line"></use>
+</svg>
